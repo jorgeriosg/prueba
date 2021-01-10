@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1 ">
     <title>prueba</title>
     <!--CSS de Bootstrap 4.2.1-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -14,14 +14,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
     <!--Mi estilo-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet"    href="assets/css/style.css">
 </head>
 <body>
 
    <!--barra navegacion-->
-<nav class="navbar  navbar-expand navbar-dark bg-color"> 
-    <div class="container">
-      <a class="navbar-brand logo" href="#"><b>M</b></a>
+<nav class="navbar  navbar-expand-sm navbar-dark bg-color"> 
+    <div class="container-fluid">
+      <a class="navbar-brand logo p-2"  href="#"><b>M</b></a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -30,7 +30,7 @@
       <div class="collapse navbar-collapse text-white" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link text-light" href="#about">Sobre mi</a>
+            <a class="nav-link text-light gato" href="#about">Sobre mi</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-light" href="#ex">Experiencias</a>
@@ -47,9 +47,8 @@
   </nav>
 
   <header>
-    <div class="">
-  <div class="row">
-  <div class=" col-sm-12 hero-section center">
+    <div class="col-12-sm">
+  <div class="hero-section center">
     <br>
     <br>
     <br>
@@ -79,11 +78,10 @@
     <h2 class="style2"><b>MAGDALENA</b></h2>
   </div>
   </div>
-  </div>
   </header>
 
    <!--Seccion sobre mi-->
- <section>
+ <section class="d-none d-sm-block" >
    <div class="text my-5">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing Lorem, ipsum dolor. </p>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit Lorem, ipsum dolor.</p>
@@ -91,7 +89,7 @@
    </div>
  </section>
 
-  <section id="about">
+  <section id="about"class="d-none d-sm-block" >
     <div class="container P-5">
     <div class="row">
     <div class= "col-md-6">
@@ -131,7 +129,7 @@
   <h1>MI EXPERIENCIA</h1>
   <hr class="line2">
 </div>
-<section class="container  p-5">
+<section class="container-fluid  p-5">
  <div class="row">
    <div class="col-12 col-md-6 center">
     <i class="fab fa-empire fa-9x color"></i>
@@ -149,45 +147,70 @@
 
  <!--Mis Trabajos-->
 
-<section id="work" class=" my-2 p-5 fondo text-center">
+<section id="work" class="my-2 p-5 fondo text-center container-fluid">
+  <div class=>
   <h1 class= "text4"><b>MIS ULTIMOS TRABAJOS</b></h1>
   <hr class="line">
-  <div class="container">
+  
   <div  class="row">
-    <div class=" col-sm-12  col-md-4 my-5 ">
-       <div class="card" style="width: 18rem;">
+    <div class=" col-sm-12 col-md-4 my-5 p-4">
+       <div class="card" style="width: auto;">
          <img src="assets/img/meet_coffee.png" alt="Card image cap"> 
+         <div class="card-body">
+           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis magni consectetur aliquid.</p>
+           <a href="#" class="btn btn-dark "data-toggle="tooltip" title="PRESIONA PARA OBTENER MAS INFORMACION" data-placement="bottom" title="Presiona para mas informacion" id="email">MAS INFORMACION</a>
+         </div>
        </div>
     </div>
-       <div class="col-sm-12 col-md-4 my-5">
-       <div class="card" style="width: 18rem;">
+       <div class="col-sm-12 col-md-4 my-5 p-4">
+       <div class="card" style="width: auto;">
          <img src="assets/img/iguana_page.png" alt="Card image cap">
+         <div class="card-body">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis magni consectetur aliquid.</p>
+          <a href="#" class="btn btn-dark "data-toggle="tooltip" title="PRESIONA PARA OBTENER MAS INFORMACION" data-placement="bottom" title="Presiona para mas informacion" id="email">MAS INFORMACION</a>
+        </div>
        </div>
       </div>
 
-     <div class="col-sm-12 col-md-4 my-5">
-       <div class="card" style="width: 18rem;">
+     <div class="col-sm-12 col-md-4 my-5 p-4">
+       <div class="card" style="width: auto;">
          <img src="assets/img/suricata.png" alt="Card image cap">
+         <div class="card-body">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis magni consectetur aliquid.</p>
+          <a href="#" class="btn btn-dark "data-toggle="tooltip" title="PRESIONA PARA OBTENER MAS INFORMACION" data-placement="bottom" title="Presiona para mas informacion" id="email">MAS INFORMACION</a>
+        </div>
        </div>
      </div>   
   </div>
 
   <div  class="row ">
-    <div class=" col-sm-12 col-md-4  my-5">
-       <div class="card" style="width: 18rem;">
+    <div class=" col-sm-12 col-md-4  my-5 p-4">
+       <div class="card" style="width: auto;">
          <img src="assets/img/cuppon.png" alt="Card image cap">
+         <div class="card-body">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis magni consectetur aliquid.</p>
+          <a href="#" class="btn btn-dark "data-toggle="tooltip" title="PRESIONA PARA OBTENER MAS INFORMACION" data-placement="bottom" title="Presiona para mas informacion" id="email">MAS INFORMACION</a>
+        </div>
        </div>
     </div>
 
-       <div class=" col-sm-12 col-md-4 my-5 ">
-       <div class="card" style="width: 18rem;">
+       <div class=" col-sm-12 col-md-4 my-5 p-4">
+       <div class="card" style="width: auto;">
          <img src="assets/img/ricomida.png" alt="Card image cap">
+         <div class="card-body">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis magni consectetur aliquid.</p>
+          <a href="#" class="btn btn-dark "data-toggle="tooltip" title="PRESIONA PARA OBTENER MAS INFORMACION" data-placement="bottom" title="Presiona para mas informacion" id="email">MAS INFORMACION</a>
+        </div>
        </div>
      </div>
 
-    <div class=" col-sm-12 col-md-4 my-5 ">
-       <div class="card" style="width: 18rem;">
-         <img src="assets/img/dmark.png" alt="Card image cap">
+    <div class=" col-sm-12 col-md-4 my-5 p-4 ">
+       <div class="card" style="width: auto;">
+         <img src="assets/img/dmark.png" alt="Card image cap" >
+         <div class="card-body">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis magni consectetur aliquid.</p>
+          <a href="#" class="btn btn-dark "data-toggle="tooltip" title="PRESIONA PARA OBTENER MAS INFORMACION" data-placement="bottom" title="Presiona para mas informacion" id="email">MAS INFORMACION</a>
+        </div>
        </div>
     </div>
   </div>
@@ -196,7 +219,7 @@
 
  <!--Contacto-->
 
- <section id="contact" class="container  center py-5 my-3">
+ <section id="contact" class="container-fluid  center py-5 my-3">
   <h1 class="text-center my-4 contact"><b>Contacto</b></h1>
   <hr class="line3">
   <div class="typeform-widget" data-url="https://form.typeform.com/to/GFb4SAs5?typeform-medium=embed-snippet" 
@@ -206,14 +229,14 @@
   q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
  </section>
 
-<footer class="color2 center p-5">
+<footer class="color2 center p-5 ">
   
   <div class="">
     <span class="logo margin"><b>MAGDALENA</b></span>
-    <a href="https://github.com" ><i class="fab fa-github-square color3  fa-4x p-3"></i>
-    <a href="https://twitter.com"><i class="fab fa-twitter-square color3  right fa-4x p-3"></i>
-    <a href="https://www.linkedin.com"><i class="fab fa-linkedin color3  fa-4x p-3"></i>
-    <a href="https://www.facebook.com"><i class="fab fa-facebook-square color3  fa-4x p-3"></i>
+    <a href="https://github.com" ><i class="fab fa-github-square color3  fa-3x p-1" ></i>
+    <a href="https://twitter.com"><i class="fab fa-twitter-square color3  fa-3x p-1"></i>
+    <a href="https://www.linkedin.com"><i class="fab fa-linkedin color3  fa-3x p-1"></i>
+    <a href="https://www.facebook.com"><i class="fab fa-facebook-square color3  fa-3x p-1"></i>
   </div>
 
 
@@ -227,6 +250,6 @@
 <!--Bootsrap JS-->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <!--mi script-->
-<script src="js/script.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
