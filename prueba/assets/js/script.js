@@ -1,5 +1,5 @@
-$("about").click(function(event){
-    if (this.hash !=="");{
+$("a").click(function(event){
+    if(this.hash !==""){
         event.preventdefault();
         var gato = this.hash;
         $("html, body").animate({
@@ -9,7 +9,21 @@ $("about").click(function(event){
             });
     }
    });
-   
+
    $(function () {
     $('[data-toggle="popover"]').popover()
   })
+
+  $("a").click(function(event){
+    if(this.hash !==""){
+      event.preventDefault();
+
+      var gato = this.hash;
+
+      $("html, body").animate({
+        scrollTop: $(gato).offset().top 
+      }, 800, function(){
+        window.location.hash = gato;
+      });
+    }   
+ });

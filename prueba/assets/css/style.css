@@ -1,9 +1,17 @@
+body * {
+    padding: 0;
+    border:0 ;
+}
+
 .hero-section {
     text-align: center;
     background-image:  url('../img/bg_hero.png');
     background-size: 100%;
     background-repeat: no-repeat;
-    
+    background:cover ;
+    height: 35%;
+    padding: 24%;
+    margin: 0%;
     color: #ffffff;
     font-family:'oswald','bold';
     }
@@ -34,15 +42,21 @@
 .style {
     font-family: 'Oswald',;
     font-size: 72pt;
+      font-weight: 100;
 }   
 .style2{
     font-family:'Oswald', bold;
     font-size: 72pt;
 }
 .line {
-    border: 1px solid white; 
-    width: 190px;
-    display: inline-block;
+    border: 2px solid white; 
+    width: 220px;
+    display: block;
+    position: absolute;
+    bottom: 2px; 
+    left: 50%;
+    transform: translatex(-30%)
+
     }
 .line2 {
     border: 1px solid black; 
@@ -94,4 +108,37 @@ color: white;
  .margin{
      margin-right: 18%;
  }   
+
+ .bg_hero{
+    position: relative;
+    text-align: center;
+    color: white;
+    display: block;
+    margin: auto;       
+}
+.title{  
+    position: absolute;
+    bottom: 10px; 
+    left: 51%;
+    transform: translatex(-30%);  
+    color: white; 
+    font-weight: lighter;
+    
+}
+
+
+.title2 {
+    position: absolute;
+    bottom: 4px; 
+    left: 50%;
+    transform: translatex(-30%);  
+    color: white; 
+    font-weight: bold;
+    text-align: center;
+    
+}
+.letra {
+    font-family: 'oswald';
+    font: lighter;
+}
 
